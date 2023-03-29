@@ -17,7 +17,7 @@ public interface SourceTargetMapper {
 
     void toEntity(ParentDto s, @MappingTarget ParentEntity t);
 
-    @Mapper( unmappedTargetPolicy = ReportingPolicy.IGNORE )
+    @Mapper( unmappedTargetPolicy = ReportingPolicy.WARN )
     public interface LenientMapper {
 
         // ChildDto.name will be mapped to ChildEntity.name (based on name), explicit ignore would still be required

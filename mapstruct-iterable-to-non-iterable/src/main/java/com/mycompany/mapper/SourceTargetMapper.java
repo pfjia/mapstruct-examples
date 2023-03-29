@@ -21,4 +21,5 @@ public interface SourceTargetMapper {
     @Mapping( source = "myIntegers", target = "myInteger", qualifiedBy = FirstElement.class )
     @Mapping( source = "myStrings", target = "myString", qualifiedBy = LastElement.class )
     Target toTarget( Source s );
+
 }

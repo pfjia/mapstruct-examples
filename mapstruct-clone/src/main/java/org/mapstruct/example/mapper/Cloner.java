@@ -6,8 +6,11 @@
 package org.mapstruct.example.mapper;
 
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.control.DeepClone;
+import org.mapstruct.example.dto.Custom;
 import org.mapstruct.example.dto.CustomerDto;
+import org.mapstruct.example.dto.SimpleEnum;
 import org.mapstruct.factory.Mappers;
 
 /**
@@ -19,7 +22,7 @@ import org.mapstruct.factory.Mappers;
 @Mapper(mappingControl = DeepClone.class)
 public interface Cloner {
 
-    Cloner MAPPER = Mappers.getMapper( Cloner.class );
+    Cloner MAPPER = Mappers.getMapper(Cloner.class);
 
     CustomerDto clone(CustomerDto customerDto);
 }

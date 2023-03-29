@@ -7,12 +7,22 @@ package com.mycompany.mapper;
 
 import java.util.List;
 
+
 /**
  *
  * @author Sjaak Derksen
  */
 public class Source {
 
+    private String ss;
+
+    public String getSs() {
+        return ss;
+    }
+
+    public void setSs(String ss) {
+        this.ss = ss;
+    }
 
     private List<Integer> myIntegers;
     private List<String> myStrings;

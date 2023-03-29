@@ -21,5 +21,6 @@ public class Main {
         Target t = SourceTargetMapper.MAPPER.toTarget( s );
         System.out.println( t.getMyInteger() );
         System.out.println( t.getMyString() );
+
     }
 }
